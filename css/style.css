@@ -38,6 +38,7 @@ button{
 }
 
 .container-app{
+    background-color:#141922 ;
     height: 100vh;
 }
 
@@ -47,7 +48,7 @@ button{
 }
 
 .menu-middle div a{
-    font-size: calc(var(--font-size-default) - 4px);
+    font-size: calc(var(--font-size-default) - 2px);
     font-weight: 900;
     color: #5d5d5d;
 }
@@ -81,6 +82,7 @@ ul li div{
     width: 70%;
 }
 .nav-bar div ul li div a{
+    font-size: calc(var(--font-size-default) - 2px);
     font-weight: 700;
     color: #5d5d5d;
 }
@@ -101,7 +103,7 @@ ul li div{
 }
 .bt-playlist{
     font-size: var(--font-size-default);
-    font-weight: 700;
+    font-weight: 300;
 }
 .bt-playlist .svg-cont{
     width: 50px
@@ -225,9 +227,9 @@ ul li div{
 /*********************************
 //////// SOLO PER DEBUG //////////
 *********************************/
-.container-app{
+/* .container-app{
     width: 1100px;
-}
+} */
 .nav-bar{
     background-color: black;
 }
@@ -237,7 +239,7 @@ ul li div{
 }
 
 .default-padding{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 .comand-bar{
     background-color: black;
