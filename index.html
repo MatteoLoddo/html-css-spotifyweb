@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+</head>
+<body>
+    <!-- container app -->
+    <div class="container-app display-flex-column">
+
+        <!--main container  -->
+        <div class="display-flex flex-grow">
+
+            <!-- nav-bar LEFT -->
+            <div class="nav-bar">
+                <div class="contain-logo default-padding">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div class="default-padding">
+                    <ul>
+                        <li>
+                            <div class="svg-cont">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#5d5d5d"/></svg>
+                            </div>
+                            <div>
+                                <a href="">Home</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="svg-cont">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#5d5d5d" fill-rule="evenodd"/></svg>                            </div>
+                            <div>
+                                <a href="">Search</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="svg-cont">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#5d5d5d"/></svg>
+                            </div>
+                            <div>
+                                <a href="">La tua libreria</a>
+                            </div>                        
+                        </li>
+                    </ul>
+                </div>
+                <h2  class="default-padding text-color-white ">PLAYLIST</h2>
+                <div class="default-padding">
+                    <button class="bt-playlist">
+                        <div class="svg-cont">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM224 368C237.3 368 248 357.3 248 344V280H312C325.3 280 336 269.3 336 256C336 242.7 325.3 232 312 232H248V168C248 154.7 237.3 144 224 144C210.7 144 200 154.7 200 168V232H136C122.7 232 112 242.7 112 256C112 269.3 122.7 280 136 280H200V344C200 357.3 210.7 368 224 368z" fill="#5d5d5d"/></svg>
+                        </div>
+                        <div class=" default-padding">
+                            Crea Playlist
+                        </div>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+            <!-- middle-content-container RIGHT -->
+            <div class="display-flex-column">
+
+                <!-- menu middle-content -->
+                <div class="menu-middle default-padding flex-shrink">
+                    <div class="display-inline-block">
+                        <a class="half-default-padding" href="#">IN EVIDENZA</a>
+                    </div>
+                    <div class="display-inline-block">
+                        <a class="half-default-padding" href="#">PODCAST</a>
+                    </div>
+                    <div class="display-inline-block">
+                        <a class="half-default-padding" href="#">CLASSIFICHE</a>
+                    </div>
+                    <div class="display-inline-block">
+                        <a class="half-default-padding" href="#">GENERI E MOOD</a>
+                    </div>
+                    <div class="display-inline-block">
+                        <a class="half-default-padding" href="#">NUOVE USCITE</a>
+                    </div>
+                    <div class="display-inline-block">
+                        <a class="half-default-padding" href="#">SCOPRI</a>
+                    </div>
+                </div>
+                <!-- content-main -->
+
+                <!-- recently played -->
+                <div class="flex-grow default-padding">
+                    <h1 class="default-padding-top-bot">Recently played</h1>
+                    <div class="row">
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                </div>
+                                <div class="title-subtitle-container">
+                                    <h3 class="half-default-padding">Heavy Metal</h3>
+                                    <h6>subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="img-card">
+                                    <img src="img/stranger.jpeg" alt="">
+                                </div>
+                                <div class="title-subtitle-container">
+                                    <h3 class="">Stranger Things, Vol.1 (a NetflixOriginal Series Soundtrack)</h3>
+                                    <h6>Kyle Dixon & Michael Stein</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="img-card">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                </div>
+                                <div class="title-subtitle-container">
+                                    <h3 class="half-default-padding">A quiet space</h3>
+                                    <h6>subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="img-card">
+                                    <img src="img/split.jpeg" alt="">
+                                </div>
+                                <div class="title-subtitle-container">
+                                    <h3 class="half-default-padding">Split</h3>
+                                    <h6>subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="img-card">
+                                    <img src="img/cure.jpeg" alt="">
+                                </div>
+                                <div class="title-subtitle-container">
+                                    <h3 class="half-default-padding">A cure for Wellness</h3>
+                                    <h6>subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="img-card">
+                                    <img src="img/sinister.jpeg" alt="">
+                                </div>
+                                <div class="title-subtitle-container">
+                                    <h3 class="half-default-padding">sinister</h3>
+                                    <h6>subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- created for ... -->
+                    <div class="default-padding-top-bot">
+                        <h1 class="default-padding-top-bot">Creato per John Doe</h1>
+                        <h6 class="">Piu ascoltati, piu accurati saranno i suggerimenti.</h6>
+                        <div class="row default-padding-top-bot">
+
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="img-card">
+                                        <img src="img/radar.jpeg" alt="">
+                                    </div>
+                                    <div class="title-subtitle-container">
+                                        <h3 class="half-default-padding">Release Radar</h3>
+                                        <h6></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="img-card">
+                                        <img src="img/mixdaily.jpeg" alt="">
+                                    </div>
+                                    <div class="title-subtitle-container">
+                                        <h3 class="half-default-padding">Daily Mix 1</h3>
+                                        <h6></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- comand-bar foot -->
+        <div class="comand-bar default-padding flex-shrink">
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

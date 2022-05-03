@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat' , sans-serif;
+}
+
+h1{
+    font-size: calc(var(--font-size-default) + 50%);
+    color: #fff;
+}
+
+h2{
+}
+
+h3{
+    line-height: calc(var(--font-size-default) - 2px);
+    font-size: calc(var(--font-size-default) - 2px);
+    color: #fff;
+}
+
+h6{
+    color: #5d5d5d;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+.container-app{
+    height: 100vh;
+}
+
+
+.menu-middle{
+    text-align: center;
+}
+
+.menu-middle div a{
+    font-size: calc(var(--font-size-default) - 4px);
+    font-weight: 900;
+    color: #5d5d5d;
+}
+
+
+
+
+
+.img-card img{
+    width: 100%;
+}
+
+.title-subtitle-container{
+    flex-shrink: 0;
+}
+.title-subtitle-container h3, .title-subtitle-container h6{
+    text-align: center;
+
+}
+
+
+/********************************
+/////////// NAV-BAR-LEFT/////////
+********************************/
+ul li div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contain-logo{
+    width: 70%;
+}
+.nav-bar div ul li div a{
+    font-weight: 700;
+    color: #5d5d5d;
+}
+.nav-bar .svg-cont{
+    width:15%;
+}
+
+.nav-bar{
+    flex-shrink: 0;
+    min-width: 250px;
+}
+
+.bt-playlist{
+    display: flex;
+    text-align: left;
+    width: 100%;
+
+}
+.bt-playlist{
+    font-size: var(--font-size-default);
+    font-weight: 700;
+}
+.bt-playlist .svg-cont{
+    width: 50px
+}
+
+.bt-playlist div{
+    align-self: center;
+    
+}
+
+
+
+/********************************
+/////////// VARIABLE ////////////
+********************************/
+:root{
+    --font-size-default: 1rem;
+    --gap: 1rem;
+    --space: 1rem;
+}
+/********************************
+//////// LAYOUT CLASS ///////////
+********************************/
+.row{
+    flex-grow: 0;
+    max-width: 100%;
+    display: flex;
+    gap: calc(var(--gap)/2);
+}
+
+.col{
+    flex-basis: 0;
+}
+
+.col-6{
+    flex-grow:0;
+    flex-basis:calc((100%/6) - 1rem);
+}
+
+
+
+/********************************
+//////// UTILITY CLASS //////////
+********************************/
+
+
+.display-flex{
+    display: flex;
+}
+
+.display-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.flex-shrink{
+    flex-shrink: 0;
+}
+
+.default-padding{
+    padding: var(--space);
+}
+
+.default-padding-top-bot{
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+}
+
+.half-default-padding{
+    padding: calc(var(--space) / 2 );
+}
+
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.text-color-white{
+    color: #ffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+//////// SOLO PER DEBUG //////////
+*********************************/
+.container-app{
+    width: 1100px;
+}
+.nav-bar{
+    background-color: black;
+}
+
+.middle{
+    background-color: blue;
+}
+
+.default-padding{
+    background-color: antiquewhite;
+}
+.comand-bar{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
