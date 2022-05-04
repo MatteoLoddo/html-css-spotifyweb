@@ -12,8 +12,6 @@ h1{
     color: #fff;
 }
 
-h2{
-}
 
 h3{
     line-height: calc(var(--font-size-default) - 2px);
@@ -25,6 +23,7 @@ h6{
     color: #5d5d5d;
 }
 a{
+    display: inline-block;
     color: #fff;
     text-decoration: none;
 }
@@ -80,17 +79,18 @@ ul li div{
 .contain-logo{
     width: 70%;
 }
-.nav-bar div ul li div a{
-    font-size: calc(var(--font-size-default) - 2px);
+
+.row div a{
     font-weight: 700;
     color: #5d5d5d;
+    vertical-align: baseline;
 }
+
 .nav-bar .svg-cont{
-    width:15%;
+    width:30px;
 }
 
 .nav-bar{
-    flex-shrink: 0;
     min-width: 250px;
 }
 
@@ -102,7 +102,7 @@ ul li div{
 }
 .bt-playlist{
     font-size: var(--font-size-default);
-    font-weight: 300;
+    font-weight: 700;
 }
 .bt-playlist .svg-cont{
     width: 50px
@@ -114,13 +114,19 @@ ul li div{
     
 }
 
-.over-flow-auto{
-    overflow: auto;
+
+
+.list-playlist ul li{
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight:700;
+    color: #5d5d5d;
+
 }
 
-.over-flow-hidden{
-    overflow: hidden;
-}
+
+
+
 
 /********************************
 ///////////COMAND-BAR////////////
@@ -184,7 +190,7 @@ ul li div{
 
 .right-cont{
     width: 20%;
-    max-width: 200px;
+    min-width: 200px;
 }
 
 .container-vol-bar{
@@ -293,6 +299,19 @@ ul li div{
     align-items: center;
 }
 
+.over-flow-auto{
+    overflow: auto;
+}
+
+.over-flow-hidden{
+    overflow: hidden;
+}
+
+.default-d-none{
+    display: none;
+}
+
+
 
 
 
@@ -344,9 +363,9 @@ ul li div{
     overflow: auto;
 }
 
-.default-padding{
-    /* background-color: antiquewhite; */
-}
+/* .default-padding{
+    background-color: antiquewhite;
+} */
 .comand-bar{
     background-color: #282828;
 }
