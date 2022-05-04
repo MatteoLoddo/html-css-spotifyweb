@@ -4,7 +4,6 @@
     }
     .col-6{
         flex-basis: calc((100% / 4) - 1rem);
-
     }
 }
 
@@ -14,7 +13,6 @@
     }
     .col-6{
         flex-basis: calc((100% / 2) - 1rem);
-
     }
 }
 
@@ -33,10 +31,9 @@
         min-width:70px;
     }
 
-    .width100x100:{
+    .width100x100{
         width: 100%;
     }
-
     .d-block-xs{
         display: block;
     }
@@ -44,6 +41,7 @@
     .d-none-xs{
         display: none;
     }
+
 }
 
 
