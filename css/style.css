@@ -130,6 +130,25 @@ ul li div{
 
 }
 
+.user-container .svg-cont{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5d5d5d;
+    overflow: hidden
+}
+
+
+
+.user-container{
+    padding-top: 0.5rem;
+    border-top: 1px solid white;
+
+}
+
+.user-container div a{
+    color: #ffff;
+}
 
 
 

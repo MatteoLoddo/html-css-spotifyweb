@@ -42,8 +42,18 @@
         display: none;
     }
 
+    .user-container{
+        border: transparent;
+    }
+
 }
 
+@media screen and (max-width:350px){
+    .col-6{
+        flex-basis: calc((100%) - 1rem);
+    }
 
 
+
+}
 
