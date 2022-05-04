@@ -41,6 +41,12 @@ button{
     height: 100vh;
 }
 
+.middle-container{
+    padding-top: 5rem;
+    background-color:#141922;
+    overflow: auto;
+}
+
 
 .menu-middle{
     text-align: center;
@@ -52,7 +58,14 @@ button{
     color: #5d5d5d;
 }
 
+.menu-middle div a:hover{
+    color: #ffff;
+    
+}
+
 .img-card{
+    z-index: 1;
+    position: relative;
     flex-shrink: 0;
     aspect-ratio: 1/1;
 }
@@ -60,12 +73,33 @@ button{
     width: 100%;
 }
 
+
+
+
 .title-subtitle-container{
     flex-shrink: 0;
 }
 .title-subtitle-container h3, .title-subtitle-container h6{
     text-align: center;
 
+}
+
+.upgrade{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.upgrade a{
+
+    padding:var(--space);
+    border: 1px solid #5d5d5d;
+    border-radius: 25px;
 }
 
 /********************************
@@ -77,6 +111,7 @@ ul li div{
 }
 
 .contain-logo{
+    z-index: 999;
     width: 70%;
 }
 
@@ -87,6 +122,7 @@ ul li div{
 }
 
 .nav-bar .svg-cont{
+    color: #5d5d5d;
     width:30px;
 }
 
@@ -118,6 +154,10 @@ ul li div{
 
     height: 100%;
 
+}
+
+.nav-bar div .row :hover{
+    color: #ffff;
 }
 
 
@@ -319,6 +359,10 @@ ul li div{
     padding-right: calc(var(--space)/2)
 }
 
+.double-padding-top{
+    padding-top: calc(var(--space) *2);
+
+}
 
 .display-inline-block{
     display: inline-block;
@@ -342,6 +386,10 @@ ul li div{
 
 .default-d-none{
     display: none;
+}
+
+.z-index-2{
+    z-index: 2;
 }
 
 
@@ -391,10 +439,7 @@ ul li div{
     background-color: black;
 }
 
-.middle{
-    background-color:#141922;
-    overflow: auto;
-}
+
 
 /* .default-padding{
     background-color: antiquewhite;
