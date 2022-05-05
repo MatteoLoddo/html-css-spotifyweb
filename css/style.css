@@ -58,22 +58,45 @@ button{
     color: #5d5d5d;
 }
 
-.menu-middle div a:hover{
+.menu-middle div:hover a{
     color: #ffff;
-    
 }
 
 .img-card{
-    z-index: 1;
+    aspect-ratio: 1/1;
     position: relative;
     flex-shrink: 0;
-    aspect-ratio: 1/1;
+    
 }
+
 .img-card img{
+    display: block;
     width: 100%;
 }
 
 
+.play-hover{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.play-hover svg{
+    color: #ffff;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.play-hover:hover{
+    opacity: 1;
+}
 
 
 .title-subtitle-container{
@@ -85,7 +108,8 @@ button{
 }
 
 .upgrade{
-    padding: 1.5rem;
+    z-index: 999;
+    padding: 1.5rem  2rem;
     display: flex;
     justify-content: end;
     background-color: rgba(0, 0, 0, 0.5);
@@ -96,12 +120,14 @@ button{
 }
 
 .upgrade a{
-
     padding:var(--space);
     border: 1px solid #5d5d5d;
     border-radius: 25px;
 }
 
+.upgrade a:hover{
+    transform:scale(1.1)
+}
 /********************************
 /////////// NAV-BAR-LEFT/////////
 ********************************/
@@ -130,6 +156,11 @@ ul li div{
     min-width: 250px;
 }
 
+.nav-bar div .row:active{
+    border-left: 2px solid #ADFF2F;
+
+}
+
 .bt-playlist{
     display: flex;
     text-align: left;
@@ -150,16 +181,23 @@ ul li div{
     
 }
 
+.bt-playlist:hover div, .bt-playlist:hover svg{
+    color: #ffff;
+}
+
 .list-playlist{
 
     height: 100%;
 
 }
 
-.nav-bar div .row :hover{
+.nav-bar div .row:hover a, .nav-bar div .row:hover svg{
     color: #ffff;
 }
 
+.nav-bar div  ul li:hover{
+    color: #ffff;
+}
 
 
 .list-playlist li{
@@ -191,8 +229,6 @@ ul li div{
 }
 
 
-
-
 /********************************
 ///////////COMAND-BAR////////////
 ********************************/
@@ -209,7 +245,13 @@ ul li div{
     width: 100%;
 }
 .svg-cont-icon{
+    align-items: center;
+    color: #5d5d5d;
     gap: var(--gap);
+}
+
+.svg-cont-icon div:hover {
+    color: #ffff;
 }
 
 .svg-cont-icon svg{
@@ -242,15 +284,36 @@ ul li div{
 
 .progress-bar-body{
     height: 50%;
-    border: 1px solid #5d5d5d;
+    background-color: #5d5d5d;
     border-radius: 20px;
 }
 
 .progress-bar{
+    justify-content: end;
     height: 100%;
-    background-color: #ffff;
+    background-color: #C1C1C1;
     width: 30%;
     border-radius: 20px;
+}
+
+.progress-bar-cont:hover .progress-bar, .container-vol-bar:hover .vol-bar{
+    background-color: #ADFF2F;
+    transition: 0.5s;
+}
+
+.progress-bar-cont:hover .circle-prog-bar, .container-vol-bar:hover .circle-prog-bar{
+    display: block;
+}
+
+.circle-prog-bar{
+    display: none;
+    transform: translate(50% , -20%);
+    position: relative;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    height: 150%;
+    aspect-ratio: 1/1;
+
 }
 
 .left-cont{
@@ -262,16 +325,19 @@ ul li div{
 }
 
 .container-vol-bar{
-    padding-top: 5px;
+    padding: calc(var(--space)/2);
+    min-width: 40%;
 }
 
 .vol-bar-body{
-    height: 50%;
-    border: 1px solid #5d5d5d;
+    width: 100%;
+    height: 5px;
+    background-color: #5d5d5d;
     border-radius: 20px;
 }
 
 .vol-bar{
+    justify-content: end;
     height: 100%;
     background-color: #ffff;
     width: 30%;
@@ -292,6 +358,7 @@ ul li div{
 //////// LAYOUT CLASS ///////////
 ********************************/
 .row{
+    border-left: 2px solid transparent;
     flex-grow: 0;
     max-width: 100%;
     display: flex;
@@ -309,7 +376,8 @@ ul li div{
 .col-6{
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis:calc((100% / 6) - 1rem);
+    flex-basis: calc((100% / 6) - 1rem);
+    aspect-ratio: 1/1;
 }
 
 
@@ -388,9 +456,16 @@ ul li div{
     display: none;
 }
 
-.z-index-2{
+/* .z-index-2{
     z-index: 2;
+} */
+
+.border-radius-circle{
+    overflow: hidden;
+    border-radius: 50%;
 }
+
+
 
 
 
